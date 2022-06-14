@@ -1,0 +1,158 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  background: white;
+}
+
+nav {
+  border-bottom: 2px solid black;
+  border-top: 2px solid black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1rem;
+  padding: 0 2rem;
+}
+
+.logo {
+  border: 1px solid black;
+  width: 120px;
+  height: 60px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  display: inline;
+}
+
+li a {
+  color: black;
+  text-align: center;
+  padding: 1rem;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+li .active {
+  box-shadow: 0 10px 0 black;
+}
+
+main {
+  min-height: 80vh;
+  padding: 2rem;
+}
+
+.block {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 3rem;
+}
+
+.image {
+  width: 60%;
+}
+
+.product_item_info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.features span {
+  font-weight: bold;
+}
+
+.price {
+  padding-bottom: 0.5rem;
+}
+
+.btn,
+input {
+  padding: 0.5rem 1.5rem;
+  background-color: white;
+  border: 1px solid black;
+}
+
+.button_add {
+  border-radius: 10px;
+  margin-top: 1rem;
+}
+
+.available_element {
+  width: 20%;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: space-between;
+  background-color: black;
+  color: white;
+  height: 3.5rem;
+  padding: 1rem;
+  margin-top: 3rem;
+}
+
+.subscribe_block {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.social_network a {
+  color: white;
+}
+
+@media (max-width: 1024px) {
+  nav ul {
+    display: none;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .block {
+    justify-content: center;
+  }
+
+  .product_item_info {
+    flex-direction: row;
+    align-items: end;
+    justify-content: space-between;
+  }
+
+  .button_add {
+    float: right;
+  }
+
+  .title_available {
+    display: none;
+  }
+
+  .subscribe_text {
+    margin-bottom: 0.5rem;
+  }
+
+  footer {
+    height: 4rem;
+  }
+}
